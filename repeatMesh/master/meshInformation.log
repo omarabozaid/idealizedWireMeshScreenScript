@@ -1,0 +1,100 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 6
+Exec   : checkMesh
+Date   : Apr 08 2021
+Time   : 11:20:44
+Host   : "head4"
+PID    : 110631
+I/O    : uncollated
+Case   : /scratch/elsayed/run/SDF_SSF_FILTRATION/study_pressureDrop_filtration/testScript/cylindericalMesh/repeatMesh/master
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Time = 0
+
+Mesh stats
+    points:           635035
+    faces:            1861300
+    internal faces:   1816700
+    cells:            613000
+    faces per cell:   6
+    boundary patches: 23
+    point zones:      0
+    face zones:       8
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     613000
+    prisms:        0
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     0
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking patch topology for multiply connected surfaces...
+    Patch               Faces    Points   Surface topology                  
+    screen              12000    12152    ok (non-closed singly connected)  
+    PLANE2_0            5500     5601     ok (non-closed singly connected)  
+    PLANE3_0            5500     5601     ok (non-closed singly connected)  
+    PLANE1_0            5400     5610     ok (non-closed singly connected)  
+    PLANE4_0            0        0        ok (empty)                        
+    PLANE5_0            5400     5610     ok (non-closed singly connected)  
+    PLANE6_0            0        0        ok (empty)                        
+    PLANE1_1            0        0        ok (empty)                        
+    PLANE4_1            0        0        ok (empty)                        
+    PLANE1_2            0        0        ok (empty)                        
+    PLANE4_2            0        0        ok (empty)                        
+    PLANE1_3            0        0        ok (empty)                        
+    PLANE4_3            0        0        ok (empty)                        
+    PLANE1_4            0        0        ok (empty)                        
+    PLANE4_4            5400     5610     ok (non-closed singly connected)  
+    PLANE5_1            0        0        ok (empty)                        
+    PLANE6_1            0        0        ok (empty)                        
+    PLANE5_2            0        0        ok (empty)                        
+    PLANE6_2            0        0        ok (empty)                        
+    PLANE5_3            0        0        ok (empty)                        
+    PLANE6_3            0        0        ok (empty)                        
+    PLANE5_4            0        0        ok (empty)                        
+    PLANE6_4            5400     5610     ok (non-closed singly connected)  
+
+Checking geometry...
+    Overall domain bounding box (2.8039e-17 2.8039e-17 -60) (30 30 100)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (5.28311e-16 8.40868e-16 -1.8786e-16) OK.
+    Max cell openness = 3.04486e-16 OK.
+    Max aspect ratio = 12.7916 OK.
+    Minimum face area = 0.0201352. Maximum face area = 1.4541.  Face area magnitudes OK.
+    Min volume = 0.00803566. Max volume = 0.422832.  Total volume = 143199.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.9874 average: 16.5445
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.68046 OK.
+    Coupled point location match (average 0) OK.
+
+Mesh OK.
+
+End
+

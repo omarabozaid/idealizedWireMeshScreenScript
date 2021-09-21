@@ -1,0 +1,95 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      topoSetDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+actions
+(
+    {
+	//PLANE 2 INLET 
+        name    f0;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+ box (-0.05 -0.05 -60.5) (6.004 6.004 -59.5);
+        }
+    }
+
+    {
+	//PLANE 3 OUTLET
+        name    f1;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+ box (-0.05 -0.05 99.5) (6.004 6.004 100.5);
+        }
+    }
+
+    {
+	//PLANE 1 SYMM 
+        name    f2;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+ box (-0.05 -0.05 -61) (0.05  6.004 101);
+        }
+    }
+
+    {
+	//PLANE 4 SYMM 
+        name    f3;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+ box (5.996 -0.05 -61) (6.004 6.004 101);
+        }
+    }
+
+    {
+	//PLANE 5 SYMM 
+        name    f4;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+ box (-0.05 -0.05 -61) (6.004 0.05 101);
+        }
+    }
+
+    {
+	//PLANE 6 SYMM 
+        name    f5;
+        type    faceSet;
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+ box (-0.05 5.996 -61) (6.004 6.004 101);
+        }
+    }
+
+
+);
+
+// ************************************************************************* //

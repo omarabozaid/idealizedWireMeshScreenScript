@@ -1,0 +1,1 @@
+{'lf':'6','rf':1,'lOG':'0.3','lCoarse':'70','lFine':'30','lDownWind':'60'}
